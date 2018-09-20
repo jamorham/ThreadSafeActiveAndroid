@@ -195,7 +195,10 @@ final class ModelInfo {
                 Log.e("Couldn't instantiate TypeSerializer.", e);
             } catch (IllegalAccessException e) {
                 Log.e("IllegalAccessException", e);
+            } catch (java.lang.NoClassDefFoundError e) {
+                Log.e("java.lang.NoClassDefFoundError", e);
             }
+
         }
     }
 }
